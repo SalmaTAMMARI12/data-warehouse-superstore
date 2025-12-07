@@ -40,7 +40,8 @@ Le projet applique les bonnes pratiques d’ingénierie des données :
 - Mise en place d’un **Star Schema** optimisé pour BI  
 
 
-  ![Uploading WhatsApp Image 2025-12-07 à 16.53.49_4bbfcc46.jpg…]()
+![WhatsApp Image 2025-12-07 à 16 53 49_c5fa8423](https://github.com/user-attachments/assets/e3fb27d2-b7d6-4fd9-bed7-90f350074976)
+
 
 
 ## ⭐ Modèle Dimensionnel – Star Schema
