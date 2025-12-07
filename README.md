@@ -14,15 +14,8 @@ Le projet applique les bonnes pratiques d’ingénierie des données :
 ---
 
 ## 📁 Structure du projet
-data-warehouse-superstore/
-├── datasets/ # Fichiers sources (CSV)
-├── bronze/ # Données brutes importées
-├── silver/ # Données nettoyées et transformées
-├── gold/ # Tables finalisées (faits + dimensions)
-├── scripts/ # Scripts SQL / Python pour l'ETL
-├── docs/ # Diagrammes, schémas, documentation
-├── tests/ # Tests éventuels
-└── README.md # Documentation du projet
+<img width="273" height="566" alt="image" src="https://github.com/user-attachments/assets/36e72c5d-b18e-46c3-b547-317ca54f81d4" />
+
 
 
 ---
