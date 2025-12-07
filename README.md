@@ -59,6 +59,18 @@ incluant :
 - Discount  
 - Quantity  
 - Foreign keys vers les dimensions  
+<img width="1422" height="960" alt="image" src="https://github.com/user-attachments/assets/52179b70-f862-4ba4-8fb3-ad5ca627a2b2" />
+<img width="1464" height="952" alt="image" src="https://github.com/user-attachments/assets/ddb73173-851e-4ab9-af28-2470c61b4204" />
+<img width="1736" height="955" alt="image" src="https://github.com/user-attachments/assets/a4e825c3-84f1-48b9-ab5d-7bab88c9aeae" />
+<img width="1912" height="987" alt="image" src="https://github.com/user-attachments/assets/aadeca33-22e4-4f1f-8845-45c27f529614" />
+<img width="1626" height="905" alt="image" src="https://github.com/user-attachments/assets/14df8186-d68c-4fbd-a261-ce89fa1567bf" />
+<img width="1615" height="910" alt="image" src="https://github.com/user-attachments/assets/2cd051ca-e405-4ca7-9d0c-b2bc778a4b1d" />
+
+
+
+
+
+<img width="1612" height="860" alt="image" src="https://github.com/user-attachments/assets/61080809-4321-4c72-9f02-a1e3f9bc4a42" />
 
 ---
 
