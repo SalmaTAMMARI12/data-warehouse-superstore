@@ -39,72 +39,9 @@ Le projet applique les bonnes pratiques d’ingénierie des données :
 - Construction de la **table de faits Fact_Sales**  
 - Mise en place d’un **Star Schema** optimisé pour BI  
 
----
-# ============================================
-#   DATA ARCHITECTURE - SUPERSTORE DW PROJECT
-# ============================================
 
-data_architecture:
-  name: "Superstore Data Warehouse"
-  architecture_style: "Medallion Architecture (Bronze → Silver → Gold)"
+  ![Uploading WhatsApp Image 2025-12-07 à 16.53.49_4bbfcc46.jpg…]()
 
-  layers:
-    bronze:
-      description: "Contient les données brutes importées depuis le CSV Superstore."
-      tables:
-        - bronze.raw_sales
-
-    silver:
-      description: "Contient les données nettoyées, typées et standardisées."
-      tables:
-        - silver.cleaned_sales
-
-    gold:
-      description: "Couches dimensionnelles & fact table (Schéma en Étoile)."
-      dimensions:
-        - gold.dim_customers
-        - gold.dim_products
-        - gold.dim_locations
-        - gold.dim_ship_modes
-        - gold.dim_dates
-      facts:
-        - gold.fact_sales (VIEW)
-
-  db_technologies:
-    database: "PostgreSQL 16"
-    etl: "Python (pandas, psycopg2) + SQL"
-    orchestration: "Stored Procedures & SQL Scripts"
-    visualization: "Power BI / Streamlit"
-
-  primary_keys:
-    dim_customers: "customer_key"
-    dim_products: "product_key"
-    dim_locations: "location_key"
-    dim_ship_modes: "ship_mode_key"
-    dim_dates: "date_key"
-
-  fact_table_keys:
-    fact_sales:
-      primary_key: "sales_line_id"
-      foreign_keys:
-        - "order_date_key → dim_dates.date_key"
-        - "ship_date_key → dim_dates.date_key"
-        - "customer_key → dim_customers.customer_key"
-        - "product_key → dim_products.product_key"
-        - "location_key → dim_locations.location_key"
-        - "ship_mode_key → dim_ship_modes.ship_mode_key"
-
-# ============================================
-#   PLACEHOLDER FOR MEDALLION SCHEMA IMAGE
-# ============================================
-
-medallion_diagram:
-  ![Uploading WhatsApp Image 2025-12-07 à 16.53.49_14159e72.jpg…]()
-
-  notes:
-    - "Represent Bronze → Silver → Gold flow"
-    - "Show transformations between layers"
-    - "Include ETL steps and main tools"
 
 ## ⭐ Modèle Dimensionnel – Star Schema
 <img width="1211" height="1265" alt="dw drawio" src="https://github.com/user-attachments/assets/5af13e5e-09b8-4918-9073-0cf7a057da7b" />
