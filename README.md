@@ -42,6 +42,7 @@ Le projet applique les bonnes pratiques d’ingénierie des données :
 ---
 
 ## ⭐ Modèle Dimensionnel – Star Schema
+<img width="1211" height="1265" alt="dw drawio" src="https://github.com/user-attachments/assets/5af13e5e-09b8-4918-9073-0cf7a057da7b" />
 
 ### 📘 Tables Dimensions
 - Dim_Customers  
@@ -86,14 +87,14 @@ CALL gold.build_dimensions();
 CALL gold.build_fact_sales();
 
 📊 Exemples d’analyses
-Total des ventes par année
+**Total des ventes par année**
 SELECT d.year, SUM(f.sales)
 FROM gold.fact_sales f
 JOIN gold.dim_dates d ON f.date_key = d.date_key
 GROUP BY d.year
 ORDER BY d.year;
 
-Top 10 des produits les plus vendus
+**Top 10 des produits les plus vendus**
 SELECT p.product_name, SUM(f.sales) AS total_sales
 FROM gold.fact_sales f
 JOIN gold.dim_products p ON f.product_key = p.product_key
@@ -106,19 +107,3 @@ LIMIT 10;
 Tous les schémas, diagrammes et explications sont disponibles dans :
 📁 docs/
 
-🤝 Contribution
-
-Forker le repo
-
-Créer une branche feature/xxx
-
-Soumettre une Pull Request
-
-📜 Licence
-
-Ce projet est publié sous licence MIT.
-
-👩‍💻 Auteur
-
-Salma Tammari
-Étudiante en ingénierie des données – ENSIAS
